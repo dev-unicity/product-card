@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background: hsl(30, 38%, 92%) ;
+}
+
+.container{
+    width: 40%;
+    margin: 50px auto;
+    display: flex;
+}
+.card1 img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card2{
+    background: hsl(0, 0%, 100%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.card2 h1{
+    margin: 15px 0;
+    font-family: 'Fraunces', serif;
+}
+.card2 p{
+     font-size: 12px;
+     line-height: 1.5rem;
+     font-family: 'Montserrat', sans-serif;
+     color:  hsl(228, 12%, 48%);
+     font-weight: 500;
+}
+.box{
+    margin: 25px;
+    padding-right: 20px;
+}
+.card2 p:nth-child(1){
+    letter-spacing: 0.3rem;
+    color:  hsl(228, 12%, 48%);
+}
+.dollar{
+    display: flex;
+    margin: 20px 0;
+}
+.dollar h2{
+    color: hsl(158, 36%, 37%);
+    margin-right: 10px;
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+}
+.dollar p{
+    text-decoration: line-through;
+    padding-top: 5px;
+    color:  hsl(228, 12%, 48%);
+}
+button{
+    width: 100%;
+    height: 7vh;
+    background:hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media only screen and (max-width:700px){
+    .container{
+        flex-wrap: wrap;
+        width: 80%;
+     }
+    .card1{
+        height: 40vh;
+        width: 100%;
+    }
+    .card1 img{
+        object-fit: cover;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+   }
+    .card2{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+    .card2 h1{
+        font-size: 25px;
+    }
+}
+
+
+
+
+
